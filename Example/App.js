@@ -2,6 +2,9 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  * @flow
+ *
+ * 注意：需要修改react-native/Libraries/Components/ScrollView/ScrollView.js
+ * 否则会报错
  */
 
 import React, { Component } from 'react';
