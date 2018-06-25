@@ -83,7 +83,7 @@ nativeOnlyProps = {
 |属性名|类型|描述|
 |:---:|:---:|:---:|
 |onRefresh|func|刷新触发|
-|onRefreshIdle|func|刷新空间闲置状态|
+|onRefreshIdle|func|刷新空闲状态|
 |onReleaseToRefresh|func|可释放刷新时触发|
 |onPulling|func|header下拉过程触发|
 
