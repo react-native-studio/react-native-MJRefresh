@@ -91,3 +91,5 @@ nativeOnlyProps = {
 |方法名|参数|描述|
 |:---:|:---:|:---:|
 |finishRefresh|无|完成刷新|
+
+自定义详情可见Example:[HuaWeiRefreshControl.js](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example/HuaWeiRefreshControl.js)
