@@ -9,9 +9,10 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+    ScrollView
 } from 'react-native';
-
+import HuaWeiRefreshControl from './HuaWeiRefreshControl'
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -23,6 +24,18 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
+        <ScrollView
+            refreshControl={
+              <HuaWeiRefreshControl
+                  ref={ref=>this._hw = ref}
+                  onRefresh={()=>{
+                    setTimeout(()=>{
+                      this._hw.finishRefresh();
+                    },1000)
+                  }}
+              />
+            }
+        >
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
@@ -34,6 +47,7 @@ export default class App extends Component<Props> {
           {instructions}
         </Text>
       </View>
+        </ScrollView>
     );
   }
 }
