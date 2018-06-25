@@ -1,0 +1,26 @@
+{
+  "name": "react-native-mjrefresh",
+  "version": "0.1.0",
+  "description": "",
+  "main": "MJRefresh.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-studio/react-native-MJRefresh.git"
+  },
+  "keywords": [
+    "mjrefresh",
+    "refreshlayout",
+    "refresh",
+    "refreshcontrol",
+    "pull"
+  ],
+  "author": "react-native-studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/react-native-studio/react-native-MJRefresh/issues"
+  },
+  "homepage": "https://github.com/react-native-studio/react-native-MJRefresh#readme"
+}
