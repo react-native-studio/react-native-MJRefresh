@@ -1,4 +1,6 @@
 # react-native-MJRefresh
+
+android自动刷新组件[react-native-SmartRefreshLayout](https://github.com/react-native-studio/react-native-SmartRefreshLayout)
 ## 第一步
 工程目录下运行<br> `npm install --save react-native-mjrefresh`<br> 或者<br> `yarn add react-native-mjrefresh`(已经安装了yarn)
 ## 第二步
