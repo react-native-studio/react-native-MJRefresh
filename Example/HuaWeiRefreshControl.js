@@ -51,6 +51,9 @@ export default class HuaWeiRefreshControl extends Component {
     finishRefresh=()=>{
         this._mjrefresh && this._mjrefresh.finishRefresh();
     }
+    beginRefresh=()=>{
+        this._mjrefresh && this._mjrefresh.beginRefresh();
+    }
     render() {
         return (
             <MJRefresh

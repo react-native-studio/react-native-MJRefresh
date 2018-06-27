@@ -13,7 +13,8 @@ import {
   StyleSheet,
   Text,
   View,
-    ScrollView
+    ScrollView,
+    Button
 } from 'react-native';
 import HuaWeiRefreshControl from './HuaWeiRefreshControl'
 const instructions = Platform.select({
@@ -49,6 +50,9 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Button title='beginRefresh' onPress={()=>{
+          this._hw.beginRefresh()
+        }}/>
       </View>
         </ScrollView>
     );
