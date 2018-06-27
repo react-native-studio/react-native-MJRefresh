@@ -70,18 +70,13 @@ export default class HuaWeiRefreshControl extends Component {
                     alignItems: 'center',
                     justifyContent: 'center',
                 }}>
-                    <View style={{
-                        position:'absolute',
-                        left:0,right:0,bottom:0,height:width*1436/1024
-                    }}>
-                        <TouchableWithoutFeedback onPress={()=>{
-                            alert('111')
-                        }}>
-                        <Image style={{width,height:width*1436/1024}}
+                        <Image style={{
+                            position:'absolute',
+                            width,
+                            left:0,right:0,bottom:0,height:width*1436/1024,
+                        }}
                                source={require('./93K58PICGPs_1024.jpg')}
                         />
-                        </TouchableWithoutFeedback>
-                    </View>
                     {this.state.refreshing ? <SkypeIndicator style={{flex: 0}} size={24} color={'#2783cf'}/> :
                         <AnimatedIcon style={{
                             transform: [{
