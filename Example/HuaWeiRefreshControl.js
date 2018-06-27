@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text,Animated,Easing} from 'react-native';
+import {StyleSheet, View, Text,Animated,Easing,Dimensions,Image,TouchableWithoutFeedback} from 'react-native';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MJRefresh from 'react-native-mjrefresh';
 import {SkypeIndicator} from 'react-native-indicators'
 const AnimatedIcon = Animated.createAnimatedComponent(Icon);
+const {width} = Dimensions.get('window');
 export default class HuaWeiRefreshControl extends Component {
     state = {
         text: '下拉刷新',
@@ -69,6 +70,18 @@ export default class HuaWeiRefreshControl extends Component {
                     alignItems: 'center',
                     justifyContent: 'center',
                 }}>
+                    <View style={{
+                        position:'absolute',
+                        left:0,right:0,bottom:0,height:width*1436/1024
+                    }}>
+                        <TouchableWithoutFeedback onPress={()=>{
+                            alert('111')
+                        }}>
+                        <Image style={{width,height:width*1436/1024}}
+                               source={require('./93K58PICGPs_1024.jpg')}
+                        />
+                        </TouchableWithoutFeedback>
+                    </View>
                     {this.state.refreshing ? <SkypeIndicator style={{flex: 0}} size={24} color={'#2783cf'}/> :
                         <AnimatedIcon style={{
                             transform: [{
