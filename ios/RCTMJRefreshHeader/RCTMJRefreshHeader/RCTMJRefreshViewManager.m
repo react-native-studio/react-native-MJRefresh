@@ -53,6 +53,17 @@ RCT_EXPORT_METHOD(finishRefresh:(nonnull NSNumber *)reactTag)
     }
   }];
 }
+RCT_EXPORT_METHOD(beginRefresh:(nonnull NSNumber *)reactTag)
+{
+    [self.bridge.uiManager addUIBlock:^(__unused RCTUIManager *uiManager, NSDictionary<NSNumber *, RCTMJRefreshHeader *> *viewRegistry) {
+        RCTMJRefreshHeader *view = viewRegistry[reactTag];
+        if (![view isKindOfClass:[RCTMJRefreshHeader class]]) {
+            RCTLogError(@"Invalid view returned from registry, expecting RCTBarrage, got: %@", view);
+        } else {
+            [view beginRefreshing];
+        }
+    }];
+}
 -(void)loadNewData
 {
   

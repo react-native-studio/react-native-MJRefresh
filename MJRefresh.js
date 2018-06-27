@@ -32,6 +32,9 @@ class MJRefresh extends Component {
     finishRefresh=()=>{
         this.dispatchCommand('finishRefresh');
     }
+    beginRefresh=()=>{
+        this.dispatchCommand('beginRefresh')
+    }
     dispatchCommand (commandName, params) {
         UIManager.dispatchViewManagerCommand(this.findNode(), UIManager.RCTMJRefreshView.Commands[commandName], params)
     }
