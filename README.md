@@ -95,3 +95,6 @@ nativeOnlyProps = {
 |finishRefresh|无|完成刷新|
 
 自定义详情可见Example:[HuaWeiRefreshControl.js](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example/HuaWeiRefreshControl.js)
+
+## 示例
+<img src="https://github.com/react-native-studio/react-native-MJRefresh/blob/master/screen_shot.gif" width = "300"  alt="图片名称" align=center />
