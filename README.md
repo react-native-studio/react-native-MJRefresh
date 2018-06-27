@@ -99,3 +99,4 @@ nativeOnlyProps = {
 
 ## 示例
 <img src="https://github.com/react-native-studio/react-native-MJRefresh/blob/master/screen_shot.gif" width = "300"  alt="图片名称" align=center />
+<img src="https://github.com/react-native-studio/react-native-MJRefresh/blob/master/1530090339829.gif" width = "300"  alt="图片名称" align=center />
