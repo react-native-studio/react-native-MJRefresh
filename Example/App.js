@@ -28,18 +28,21 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
+        <View style={{flex:1}}>
         <ScrollView
-            refreshControl={
-              <HuaWeiRefreshControl
-                  ref={ref=>this._hw = ref}
-                  onRefresh={()=>{
+            style={{flex:1}}
+            scrollEventThrottle={16}
+            onScroll={e=>console.log(e.nativeEvent)}
+            refreshControl={<HuaWeiRefreshControl
+                ref={ref=>this._hw = ref}
+                onRefresh={()=>{
                     setTimeout(()=>{
-                      this._hw.finishRefresh();
+                        this._hw.finishRefresh();
                     },1000)
-                  }}
-              />
-            }
+                }}
+            />}
         >
+
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
@@ -55,16 +58,15 @@ export default class App extends Component<Props> {
         }}/>
       </View>
         </ScrollView>
+        </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
+      height:1000
   },
   welcome: {
     fontSize: 20,
