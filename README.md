@@ -6,32 +6,9 @@ android自动刷新组件见[react-native-SmartRefreshLayout](https://github.com
 ## 第二步
 运行 `react-native link react-native-mjrefresh`
 ## 第三部使用
-修改react-native/Libaries/Components/ScrollView/ScrollView.js
-```js
-
-...
-if(Platform.ios === 'ios'){
-nativeOnlyProps = {
-    nativeOnly: {
-      onMomentumScrollBegin: true,
-      onMomentumScrollEnd : true,
-      onScrollBeginDrag: true,
-      onScrollEndDrag: true,
-    }
-  };
-  RCTScrollView = requireNativeComponent(
-    'RCTMJScrollView',//此处修改为RCTMJScrollView即可
-    (ScrollView: React.ComponentType<any>),
-    nativeOnlyProps,
-  );
-  RCTScrollContentView = requireNativeComponent('RCTMJScrollContentView', View);//此处修改为RCTMJScrollContentView
-
-  ...
-  }
-
-```
 在工程中导入：
 ```js
+import MJRefresh,{ScrollView} from 'react-native-mjrefresh'
   state={
         text:'下拉刷新'
     }
