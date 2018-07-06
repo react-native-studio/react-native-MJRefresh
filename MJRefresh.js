@@ -12,8 +12,9 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types'
 import MJScrollView from './MJScrollView'
-
-const RCTMJRefreshView = requireNativeComponent('RCTMJRefreshView', MJRefresh);
+const UnimplementedView = require('react-native/Libraries/Components/UnimplementedViews/UnimplementedView')
+//Android平台未实现RCTMJRefreshView
+const RCTMJRefreshView = Platform.OS === 'ios' ? requireNativeComponent('RCTMJRefreshView', MJRefresh) : UnimplementedView;
 
 class MJRefresh extends Component {
     _onMJRefresh=()=>{
