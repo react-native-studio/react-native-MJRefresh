@@ -920,24 +920,7 @@ let nativeOnlyProps,
     RCTScrollView,
     RCTScrollContentView;
 if (Platform.OS === 'android') {
-    nativeOnlyProps = {
-        nativeOnly: {
-            sendMomentumEvents: true,
-        }
-    };
-    AndroidScrollView = requireNativeComponent(
-        'RCTScrollView',
-        (ScrollView: React.ComponentType<any>),
-        nativeOnlyProps
-    );
-    AndroidHorizontalScrollView = requireNativeComponent(
-        'AndroidHorizontalScrollView',
-        (ScrollView: React.ComponentType<any>),
-        nativeOnlyProps
-    );
-    AndroidHorizontalScrollContentView = requireNativeComponent(
-        'AndroidHorizontalScrollContentView'
-    );
+
 } else if (Platform.OS === 'ios') {
     nativeOnlyProps = {
         nativeOnly: {

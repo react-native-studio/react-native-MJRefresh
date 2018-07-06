@@ -7,8 +7,11 @@ import {
     ViewPropTypes,
     findNodeHandle,
     UIManager,
+    ScrollView as NativeScrollView,
+    Platform,
 } from 'react-native';
 import PropTypes from 'prop-types'
+import MJScrollView from './MJScrollView'
 
 const RCTMJRefreshView = requireNativeComponent('RCTMJRefreshView', MJRefresh);
 
@@ -69,5 +72,5 @@ MJRefresh.propTypes={
     onPulling:PropTypes.func,
     ...ViewPropTypes
 }
-export {default as ScrollView} from './MJScrollView'
+export const ScrollView = Platform.OS === 'ios' ? MJScrollView : NativeScrollView;
 export default MJRefresh;
