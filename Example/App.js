@@ -13,8 +13,7 @@ import {
   StyleSheet,
   Text,
   View,
-    ScrollView,
-    Button
+    Button,
 } from 'react-native';
 import HuaWeiRefreshControl from './HuaWeiRefreshControl'
 const instructions = Platform.select({
@@ -23,13 +22,14 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
+import {ScrollView} from 'react-native-mjrefresh'
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
         <View style={{flex:1}}>
         <ScrollView
+            //contentContainerStyle={{paddingVertical:50}}
             style={{flex:1}}
             scrollEventThrottle={16}
             onScroll={e=>console.log(e.nativeEvent)}
