@@ -9,6 +9,7 @@ android自动刷新组件见[react-native-SmartRefreshLayout](https://github.com
 在工程中导入：
 ```js
 import MJRefresh,{ScrollView} from 'react-native-mjrefresh'
+//该ScrollView兼容官方所有的属性和方法，refreshControl也可以使用官方的RefreshControl
   state={
         text:'下拉刷新'
     }
