@@ -69,4 +69,5 @@ MJRefresh.propTypes={
     onPulling:PropTypes.func,
     ...ViewPropTypes
 }
+export {default as ScrollView} from './MJScrollView'
 export default MJRefresh;
