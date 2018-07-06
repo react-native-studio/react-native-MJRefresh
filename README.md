@@ -20,10 +20,12 @@ nativeOnlyProps = {
     }
   };
   RCTScrollView = requireNativeComponent(
-    'RCJScrollView',//此处修改为RCTMJScrollView即可
+    'RCTMJScrollView',//此处修改为RCTMJScrollView即可
     (ScrollView: React.ComponentType<any>),
     nativeOnlyProps,
   );
+  RCTScrollContentView = requireNativeComponent('RCTMJScrollContentView', View);//此处修改为RCTMJScrollContentView
+
   ...
   }
 
