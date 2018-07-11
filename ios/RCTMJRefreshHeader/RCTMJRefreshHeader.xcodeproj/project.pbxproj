@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAF0B24220E0850C0045623D /* RCTMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B24120E0850C0045623D /* RCTMJRefreshHeader.m */; };
-		FAF0B24320E0850C0045623D /* RCTMJRefreshHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAF0B24020E0850C0045623D /* RCTMJRefreshHeader.h */; };
+		FAAF49DA20F5C61C002E78A7 /* RCTMJScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF49CE20F5C61B002E78A7 /* RCTMJScrollContentView.m */; };
+		FAAF49DB20F5C61C002E78A7 /* RCTMJScrollContentViewMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF49CF20F5C61B002E78A7 /* RCTMJScrollContentViewMananger.m */; };
+		FAAF49DC20F5C61C002E78A7 /* RCTMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF49D120F5C61B002E78A7 /* RCTMJRefreshHeader.m */; };
+		FAAF49DD20F5C61C002E78A7 /* RCTMJRefreshViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF49D520F5C61B002E78A7 /* RCTMJRefreshViewManager.m */; };
+		FAAF49DE20F5C61C002E78A7 /* RCTMJScrollContentShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF49D720F5C61C002E78A7 /* RCTMJScrollContentShadowView.m */; };
+		FAAF49DF20F5C61C002E78A7 /* RCTMJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF49D820F5C61C002E78A7 /* RCTMJScrollView.m */; };
+		FAAF49E020F5C61C002E78A7 /* RCTMJScrollViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAF49D920F5C61C002E78A7 /* RCTMJScrollViewManager.m */; };
 		FAF0B2A420E086090045623D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B27620E086080045623D /* UIScrollView+MJRefresh.m */; };
 		FAF0B2A520E086090045623D /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B27720E086080045623D /* MJRefreshConst.m */; };
 		FAF0B2A620E086090045623D /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B27D20E086080045623D /* UIScrollView+MJExtension.m */; };
@@ -28,9 +33,6 @@
 		FAF0B2B420E086090045623D /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B29E20E086080045623D /* MJRefreshBackFooter.m */; };
 		FAF0B2B520E086090045623D /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B29F20E086080045623D /* MJRefreshAutoFooter.m */; };
 		FAF0B2B620E086090045623D /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B2A120E086080045623D /* MJRefreshComponent.m */; };
-		FAF0B2BB20E0873E0045623D /* RCTMJScrollViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B2B720E0873D0045623D /* RCTMJScrollViewManager.m */; };
-		FAF0B2BC20E0873E0045623D /* RCTMJRefreshViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B2B920E0873E0045623D /* RCTMJRefreshViewManager.m */; };
-		FAF0B2BD20E0873E0045623D /* RCTMJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0B2BA20E0873E0045623D /* RCTMJScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,16 +42,26 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				FAF0B24320E0850C0045623D /* RCTMJRefreshHeader.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FAAF49CD20F5C61A002E78A7 /* UIView+Private1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Private1.h"; sourceTree = "<group>"; };
+		FAAF49CE20F5C61B002E78A7 /* RCTMJScrollContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJScrollContentView.m; sourceTree = "<group>"; };
+		FAAF49CF20F5C61B002E78A7 /* RCTMJScrollContentViewMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJScrollContentViewMananger.m; sourceTree = "<group>"; };
+		FAAF49D020F5C61B002E78A7 /* RCTMJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMJRefreshHeader.h; sourceTree = "<group>"; };
+		FAAF49D120F5C61B002E78A7 /* RCTMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJRefreshHeader.m; sourceTree = "<group>"; };
+		FAAF49D220F5C61B002E78A7 /* RCTMJScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMJScrollContentView.h; sourceTree = "<group>"; };
+		FAAF49D320F5C61B002E78A7 /* RCTMJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMJScrollView.h; sourceTree = "<group>"; };
+		FAAF49D420F5C61B002E78A7 /* RCTMJScrollContentShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMJScrollContentShadowView.h; sourceTree = "<group>"; };
+		FAAF49D520F5C61B002E78A7 /* RCTMJRefreshViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJRefreshViewManager.m; sourceTree = "<group>"; };
+		FAAF49D620F5C61C002E78A7 /* RCTMJScrollViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMJScrollViewManager.h; sourceTree = "<group>"; };
+		FAAF49D720F5C61C002E78A7 /* RCTMJScrollContentShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJScrollContentShadowView.m; sourceTree = "<group>"; };
+		FAAF49D820F5C61C002E78A7 /* RCTMJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJScrollView.m; sourceTree = "<group>"; };
+		FAAF49D920F5C61C002E78A7 /* RCTMJScrollViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJScrollViewManager.m; sourceTree = "<group>"; };
 		FAF0B23D20E0850C0045623D /* libRCTMJRefreshHeader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTMJRefreshHeader.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAF0B24020E0850C0045623D /* RCTMJRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTMJRefreshHeader.h; sourceTree = "<group>"; };
-		FAF0B24120E0850C0045623D /* RCTMJRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTMJRefreshHeader.m; sourceTree = "<group>"; };
 		FAF0B27620E086080045623D /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		FAF0B27720E086080045623D /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
 		FAF0B27820E086080045623D /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
@@ -90,10 +102,6 @@
 		FAF0B2A120E086080045623D /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		FAF0B2A220E086080045623D /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		FAF0B2A320E086080045623D /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		FAF0B2B720E0873D0045623D /* RCTMJScrollViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJScrollViewManager.m; sourceTree = "<group>"; };
-		FAF0B2B820E0873D0045623D /* RCTMJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMJScrollView.h; sourceTree = "<group>"; };
-		FAF0B2B920E0873E0045623D /* RCTMJRefreshViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJRefreshViewManager.m; sourceTree = "<group>"; };
-		FAF0B2BA20E0873E0045623D /* RCTMJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMJScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +135,19 @@
 		FAF0B23F20E0850C0045623D /* RCTMJRefreshHeader */ = {
 			isa = PBXGroup;
 			children = (
-				FAF0B2B920E0873E0045623D /* RCTMJRefreshViewManager.m */,
-				FAF0B2B820E0873D0045623D /* RCTMJScrollView.h */,
-				FAF0B2BA20E0873E0045623D /* RCTMJScrollView.m */,
-				FAF0B2B720E0873D0045623D /* RCTMJScrollViewManager.m */,
-				FAF0B24020E0850C0045623D /* RCTMJRefreshHeader.h */,
-				FAF0B24120E0850C0045623D /* RCTMJRefreshHeader.m */,
+				FAAF49D020F5C61B002E78A7 /* RCTMJRefreshHeader.h */,
+				FAAF49D120F5C61B002E78A7 /* RCTMJRefreshHeader.m */,
+				FAAF49D520F5C61B002E78A7 /* RCTMJRefreshViewManager.m */,
+				FAAF49D420F5C61B002E78A7 /* RCTMJScrollContentShadowView.h */,
+				FAAF49D720F5C61C002E78A7 /* RCTMJScrollContentShadowView.m */,
+				FAAF49D220F5C61B002E78A7 /* RCTMJScrollContentView.h */,
+				FAAF49CE20F5C61B002E78A7 /* RCTMJScrollContentView.m */,
+				FAAF49CF20F5C61B002E78A7 /* RCTMJScrollContentViewMananger.m */,
+				FAAF49D320F5C61B002E78A7 /* RCTMJScrollView.h */,
+				FAAF49D820F5C61C002E78A7 /* RCTMJScrollView.m */,
+				FAAF49D620F5C61C002E78A7 /* RCTMJScrollViewManager.h */,
+				FAAF49D920F5C61C002E78A7 /* RCTMJScrollViewManager.m */,
+				FAAF49CD20F5C61A002E78A7 /* UIView+Private1.h */,
 			);
 			path = RCTMJRefreshHeader;
 			sourceTree = "<group>";
@@ -289,26 +304,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAF49DF20F5C61C002E78A7 /* RCTMJScrollView.m in Sources */,
 				FAF0B2A920E086090045623D /* MJRefreshBackGifFooter.m in Sources */,
+				FAAF49DD20F5C61C002E78A7 /* RCTMJRefreshViewManager.m in Sources */,
 				FAF0B2B220E086090045623D /* MJRefreshFooter.m in Sources */,
 				FAF0B2AD20E086090045623D /* MJRefreshAutoGifFooter.m in Sources */,
+				FAAF49DE20F5C61C002E78A7 /* RCTMJScrollContentShadowView.m in Sources */,
 				FAF0B2A620E086090045623D /* UIScrollView+MJExtension.m in Sources */,
-				FAF0B2BD20E0873E0045623D /* RCTMJScrollView.m in Sources */,
+				FAAF49DB20F5C61C002E78A7 /* RCTMJScrollContentViewMananger.m in Sources */,
+				FAAF49E020F5C61C002E78A7 /* RCTMJScrollViewManager.m in Sources */,
+				FAAF49DC20F5C61C002E78A7 /* RCTMJRefreshHeader.m in Sources */,
 				FAF0B2B120E086090045623D /* MJRefreshGifHeader.m in Sources */,
 				FAF0B2AF20E086090045623D /* MJRefreshNormalHeader.m in Sources */,
 				FAF0B2B420E086090045623D /* MJRefreshBackFooter.m in Sources */,
-				FAF0B2BB20E0873E0045623D /* RCTMJScrollViewManager.m in Sources */,
 				FAF0B2AC20E086090045623D /* MJRefreshAutoStateFooter.m in Sources */,
 				FAF0B2B520E086090045623D /* MJRefreshAutoFooter.m in Sources */,
 				FAF0B2A820E086090045623D /* UIView+MJExtension.m in Sources */,
 				FAF0B2AE20E086090045623D /* MJRefreshAutoNormalFooter.m in Sources */,
 				FAF0B2A420E086090045623D /* UIScrollView+MJRefresh.m in Sources */,
+				FAAF49DA20F5C61C002E78A7 /* RCTMJScrollContentView.m in Sources */,
 				FAF0B2B620E086090045623D /* MJRefreshComponent.m in Sources */,
 				FAF0B2AA20E086090045623D /* MJRefreshBackStateFooter.m in Sources */,
-				FAF0B2BC20E0873E0045623D /* RCTMJRefreshViewManager.m in Sources */,
 				FAF0B2B320E086090045623D /* MJRefreshHeader.m in Sources */,
 				FAF0B2B020E086090045623D /* MJRefreshStateHeader.m in Sources */,
-				FAF0B24220E0850C0045623D /* RCTMJRefreshHeader.m in Sources */,
 				FAF0B2AB20E086090045623D /* MJRefreshBackNormalFooter.m in Sources */,
 				FAF0B2A720E086090045623D /* NSBundle+MJRefresh.m in Sources */,
 				FAF0B2A520E086090045623D /* MJRefreshConst.m in Sources */,
