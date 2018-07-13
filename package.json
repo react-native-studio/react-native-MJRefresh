@@ -1,6 +1,6 @@
 {
-  "name": "react-native-mjrefresh",
-  "version": "0.5.3",
+  "name": "react-native-mjrefresh-lower",
+  "version": "0.2.0",
   "description": "",
   "main": "MJRefresh.js",
   "scripts": {
