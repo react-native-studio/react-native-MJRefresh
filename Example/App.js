@@ -18,11 +18,16 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
+import  HuaWeiRefreshControl from './HuaWeiRefreshControl'
+import {ScrollView} from 'react-native-mjrefresh-lower'
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
+        <View style={{flex:1}}>
+          <ScrollView
+              refreshControl={<HuaWeiRefreshControl/>}
+              style={{flex:1}}>
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
@@ -34,6 +39,8 @@ export default class App extends Component<Props> {
           {instructions}
         </Text>
       </View>
+          </ScrollView>
+        </View>
     );
   }
 }
@@ -44,6 +51,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+      height:1000
   },
   welcome: {
     fontSize: 20,
