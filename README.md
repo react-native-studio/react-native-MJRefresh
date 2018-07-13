@@ -8,11 +8,14 @@ android自动刷新组件见[react-native-SmartRefreshLayout](https://github.com
 `yarn add react-native-mjrefresh-lower`(rn<=0.54)
 (已经安装了yarn)
 ## 第二步
-运行 `react-native link react-native-mjrefresh`
+运行 `react-native link react-native-mjrefresh`（rn>=0.55）<br/>
+`react-native link react-native-mjrefresh-lower`（rn<=0.54）
 ## 第三部使用
 在工程中导入：
 ```js
-import MJRefresh,{ScrollView} from 'react-native-mjrefresh'
+import MJRefresh,{ScrollView} from 'react-native-mjrefresh'//rn>=0.55
+//import MJRefresh,{ScrollView} from 'react-native-mjrefresh-lower'//rn<=0.54
+
 //该ScrollView兼容官方所有的属性和方法，refreshControl也可以使用官方的RefreshControl
   state={
         text:'下拉刷新'
