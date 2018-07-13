@@ -14,7 +14,9 @@
 #import <React/RCTLog.h>
 #import <React/RCTUIManager.h>
 #import <React/RCTUIManagerObserverCoordinator.h>
+#if __has_include(<React/RCTUIManagerUtils.h>)
 #import <React/RCTUIManagerUtils.h>
+#endif
 #import <React/RCTUtils.h>
 #import "UIView+Private1.h"
 #import <React/UIView+React.h>
