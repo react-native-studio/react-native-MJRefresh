@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text,ListView} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
 import PropTypes from 'prop-types';
 import HuaWeiRefreshControl from './HuaWeiRefreshControl';
-import {ScrollView} from 'react-native-mjrefresh-lower'
+import {ScrollView,ListView} from 'react-native-mjrefresh-lower'
 
 export default class ListViewExample extends Component {
     constructor(props){
@@ -20,7 +20,7 @@ export default class ListViewExample extends Component {
     render() {
         return (
             <View style={{flex: 1}}>
-                <ListView//注意需修改ListView的var RCTScrollViewManager = require('NativeModules').ScrollViewManager;为var RCTScrollViewManager = require('NativeModules').MJScrollViewManager;
+                <ListView
                     dataSource={this.state.dataSource}
                     renderRow={(rowData) => <Text onPress={()=>alert(111)} style={{height:100}}>{rowData}</Text>}
                     renderScrollComponent={props=><ScrollView
