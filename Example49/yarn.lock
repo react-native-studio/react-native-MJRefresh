@@ -3828,9 +3828,9 @@ react-native-indicators@^0.13.0:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-mjrefresh-lower@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/react-native-mjrefresh-lower/-/react-native-mjrefresh-lower-0.2.1.tgz#e7fdaeb2352f6bbe96fd26f56930e5a29ad185c9"
+react-native-mjrefresh-lower@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/react-native-mjrefresh-lower/-/react-native-mjrefresh-lower-0.3.0.tgz#428f480a2c3a5a806873f8035ceadcab3aa18378"
 
 react-native-vector-icons@^5.0.0:
   version "5.0.0"
