@@ -84,6 +84,10 @@ import MJRefresh,{ScrollView} from 'react-native-mjrefresh'//rn>=0.55
 
 自定义详情可见Example:[HuaWeiRefreshControl.js](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example/HuaWeiRefreshControl.js)
 
+ListView使用见：[ListViewExample](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example49/ListViewExample.js)
+
+FlatList使用见：[FlatListExample](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example49/FlatListExample.js)
+
 ## 示例
 <img src="https://github.com/react-native-studio/react-native-MJRefresh/blob/master/screen_shot.gif" width = "300"  alt="图片名称" align=center />
 <img src="https://github.com/react-native-studio/react-native-MJRefresh/blob/master/1530090339829.gif" width = "300"  alt="图片名称" align=center />
