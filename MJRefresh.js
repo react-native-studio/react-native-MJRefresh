@@ -4,7 +4,7 @@ import {
     View,
     Text,
     requireNativeComponent,
-    ViewPropTypes,
+    ViewPropTypes as RNViewPropTypes,
     findNodeHandle,
     UIManager,
     ScrollView as NativeScrollView,
@@ -13,6 +13,7 @@ import {
 import PropTypes from 'prop-types'
 import MJScrollView from './MJScrollView'
 import MJListView from './MJListView'
+const ViewPropTypes = RNViewPropTypes || View.propTypes;
 const UnimplementedView = require('react-native/Libraries/Components/UnimplementedViews/UnimplementedView')
 //Android平台未实现RCTMJRefreshView
 const RCTMJRefreshView = Platform.OS === 'ios' ? requireNativeComponent('RCTMJRefreshView', MJRefresh) : UnimplementedView;
