@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/react-native-studio/react-native-MJRefresh/issues"
   },
-  "homepage": "https://github.com/react-native-studio/react-native-MJRefresh#readme"
+  "homepage": "https://github.com/react-native-studio/react-native-MJRefresh#readme",
+  "dependencies": {
+    "prop-types":"*"
+  }
 }
