@@ -505,7 +505,9 @@ static inline void RCTApplyTransformationAccordingLayoutDirection(UIView *view, 
 - (void)dealloc
 {
     _scrollView.delegate = nil;
-    [_eventDispatcher.bridge.uiManager.observerCoordinator removeObserver:self];
+    if (_maintainVisibleContentPosition != nil) {
+        [_eventDispatcher.bridge.uiManager.observerCoordinator removeObserver:self];
+    }
 }
 
 - (void)layoutSubviews
