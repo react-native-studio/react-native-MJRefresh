@@ -4097,7 +4097,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@*, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -4170,9 +4170,11 @@ react-native-indicators@^0.13.0:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-mjrefresh@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.npmjs.org/react-native-mjrefresh/-/react-native-mjrefresh-0.5.3.tgz#f926e21d71f1715896a4744b95039cf2e567483a"
+react-native-mjrefresh@^0.5.6:
+  version "0.5.6"
+  resolved "https://registry.npmjs.org/react-native-mjrefresh/-/react-native-mjrefresh-0.5.6.tgz#88349f7c1ebd2810d91d0d9b0943f702f1a56827"
+  dependencies:
+    prop-types "*"
 
 react-native-vector-icons@^4.6.0:
   version "4.6.0"
