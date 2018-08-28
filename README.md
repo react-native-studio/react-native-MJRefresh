@@ -1,6 +1,7 @@
 # react-native-MJRefresh[![npm version](https://badge.fury.io/js/react-native-mjrefresh.svg)](https://badge.fury.io/js/react-native-mjrefresh)
 如果你喜欢，请不要吝啬你的:smile: star :smile:
-android自动刷新组件见[react-native-SmartRefreshLayout](https://github.com/react-native-studio/react-native-SmartRefreshLayout)
+
+***Android*** 自定义下拉刷新组件见[react-native-SmartRefreshLayout](https://github.com/react-native-studio/react-native-SmartRefreshLayout)
 ## 第一步
 工程目录下运行<br> `npm install --save react-native-mjrefresh`(rn>=0.55.0)<br>
 `npm install --save react-native-mjrefresh-lower`(rn<=0.54)
@@ -76,6 +77,8 @@ import MJRefresh,{ScrollView} from 'react-native-mjrefresh'//rn>=0.55
 |onReleaseToRefresh|func|可释放刷新时触发|
 |onPulling|func|header下拉过程触发|
 
+onPulling参数为{nativeEvent:percent},结合lottie-react-native可以获得绝佳的下拉刷新效果
+
 #### 方法表格
 |方法名|参数|描述|
 |:---:|:---:|:---:|
@@ -89,5 +92,7 @@ ListView使用见：[ListViewExample](https://github.com/react-native-studio/rea
 FlatList使用见：[FlatListExample](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example49/FlatListExample.js)
 
 ## 示例
+<div align=center>
 <img src="https://github.com/react-native-studio/react-native-MJRefresh/blob/master/screen_shot.gif" width = "300"  alt="图片名称" align=center />
 <img src="https://github.com/react-native-studio/react-native-MJRefresh/blob/master/1530090339829.gif" width = "300"  alt="图片名称" align=center />
+  </div>
