@@ -22,11 +22,12 @@ const instructions = Platform.select({
 import {ScrollView} from 'react-native-mjrefresh-lower'
 import ListViewExample from "./ListViewExample";
 import FlatListExample from "./FlatListExample";
+import LottieListViewExample from "./LottieListViewExample";
 type Props = {};
 export default class App extends Component<Props> {
     render() {
         return (
-          <ListViewExample/>
+          <LottieListViewExample/>
         );
     }
 }
