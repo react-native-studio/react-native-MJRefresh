@@ -58,6 +58,9 @@ class MJRefresh extends Component {
             onMJReleaseToRefresh={this._onMJReleaseToRefresh}
             onMJPulling={this._onMJPulling}
             style={[
+                {
+                    backgroundColor:'transparent'
+                },
                 style,
                 {
                     position:'absolute',
