@@ -9,8 +9,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
-    Button,
+  View, Button,SafeAreaView
 } from 'react-native';
 import HuaWeiRefreshControl from './HuaWeiRefreshControl'
 const instructions = Platform.select({
@@ -20,42 +19,14 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 import {ScrollView} from 'react-native-mjrefresh'
+import LottieListViewExample from "./LottieListViewExample";
+import ListViewExample from "./ListViewExample";
+import FlatListExample from "./FlatListExample";
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-        <View style={{flex:1}}>
-        <ScrollView
-            //contentContainerStyle={{paddingVertical:50}}
-            style={{flex:1}}
-            scrollEventThrottle={16}
-            onScroll={e=>console.log(e.nativeEvent)}
-            refreshControl={<HuaWeiRefreshControl
-                ref={ref=>this._hw = ref}
-                onRefresh={()=>{
-                    setTimeout(()=>{
-                        this._hw.finishRefresh();
-                    },1000)
-                }}
-            />}
-        >
-
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-        <Button title='beginRefresh' onPress={()=>{
-          this._hw.beginRefresh()
-        }}/>
-      </View>
-        </ScrollView>
-        </View>
+        <FlatListExample/>
     );
   }
 }
