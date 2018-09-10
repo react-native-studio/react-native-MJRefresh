@@ -9,6 +9,7 @@ import {
     UIManager,
     ScrollView as NativeScrollView,
     Platform,
+    ListView as NativeListView,
 } from 'react-native';
 import PropTypes from 'prop-types'
 import MJScrollView from './MJScrollView'
@@ -79,5 +80,5 @@ MJRefresh.propTypes={
     ...ViewPropTypes
 }
 export const ScrollView = Platform.OS === 'ios' ? MJScrollView : NativeScrollView;
-export const ListView = MJListView;
+export const ListView = Platform.OS === 'ios' ? MJListView : NativeListView;
 export default MJRefresh;
