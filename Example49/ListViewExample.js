@@ -28,9 +28,9 @@ export default class ListViewExample extends Component {
                             <HuaWeiRefreshControl
                                 ref={ref=>this._hw = ref}
                                 onRefresh={this._onRefresh}
-                                {...props}
                             />
                         }
+                        {...props}
                     />}
                 />
             </View>
