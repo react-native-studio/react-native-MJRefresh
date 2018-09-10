@@ -29,9 +29,9 @@ export default class LottieListViewExample extends Component {
                             <LottieRefreshControl
                                 ref={ref=>this._hw = ref}
                                 onRefresh={this._onRefresh}
-                                {...props}
                             />
                         }
+                        {...props}
                     />}
                 />
             </View>
