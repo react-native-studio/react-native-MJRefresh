@@ -37,6 +37,7 @@ var cloneReferencedElement = require('react-clone-referenced-element');
 var createReactClass = require('create-react-class');
 var isEmpty = require('react-native/Libraries/vendor/core/isEmpty');
 var merge = require('merge');
+var MJScrollView = require('./MJScrollView');
 
 var DEFAULT_PAGE_SIZE = 1;
 var DEFAULT_INITIAL_ROWS = 10;
@@ -338,7 +339,7 @@ getDefaultProps: function() {
     return {
         initialListSize: DEFAULT_INITIAL_ROWS,
         pageSize: DEFAULT_PAGE_SIZE,
-        renderScrollComponent: props => <ScrollView {...props} />,
+        renderScrollComponent: props => <MJScrollView {...props} />,
         scrollRenderAheadDistance: DEFAULT_SCROLL_RENDER_AHEAD,
         onEndReachedThreshold: DEFAULT_END_REACHED_THRESHOLD,
         stickySectionHeadersEnabled: Platform.OS === 'ios',
