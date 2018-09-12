@@ -11,7 +11,7 @@ module.exports = class MJListView extends ListView {
   _measureAndUpdateScrollProps = () => {
     var scrollComponent = this.getScrollResponder();
     if (!scrollComponent || !scrollComponent.getInnerViewNode) {
-      return
+      return;
     }
 
     RCTMJScrollViewManager &&

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import PropTypes from 'prop-types';
 import HuaWeiRefreshControl from './HuaWeiRefreshControl';
-import {ScrollView,ListView} from 'react-native-mjrefresh-lower'
+import {ScrollView,ListView} from 'react-native-mjrefresh'
 
 export default class ListViewExample extends Component {
     constructor(props){

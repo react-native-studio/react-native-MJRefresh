@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text,ListView,FlatList} from 'react-native';
 import PropTypes from 'prop-types';
 import HuaWeiRefreshControl from './HuaWeiRefreshControl';
-import {ScrollView,ListView} from 'react-native-mjrefresh-lower'
+import {ScrollView} from 'react-native-mjrefresh'
 
-export default class ListViewExample extends Component {
+export default class FlatListExample extends Component {
     constructor(props){
         super(props);
-        var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         this.state = {
-            dataSource: ds.cloneWithRows(['row 1', 'row 2','row 3','row 4','row 5','row 6','row 7','row 8']),
+            data: ['row 1', 'row 2','row 3','row 4','row 5','row 6','row 7','row 8'],
         };
     }
     _onRefresh=()=>{
@@ -20,10 +19,12 @@ export default class ListViewExample extends Component {
     render() {
         return (
             <View style={{flex: 1}}>
-                <ListView
-                    dataSource={this.state.dataSource}
-                    renderRow={(rowData) => <Text onPress={()=>alert(111)} style={{height:100}}>{rowData}</Text>}
+                <FlatList
+                    keyExtractor={(item)=>item}
+                    data={this.state.data}
+                    renderItem={({item,index}) => <Text key={index} onPress={()=>alert(111)} style={{height:100}}>{item}</Text>}
                     renderScrollComponent={props=><ScrollView
+                        style={{flex:1}}
                         refreshControl={
                             <HuaWeiRefreshControl
                                 ref={ref=>this._hw = ref}

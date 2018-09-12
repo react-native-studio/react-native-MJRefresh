@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import PropTypes from 'prop-types';
 import HuaWeiRefreshControl from './HuaWeiRefreshControl';
-import {ScrollView,ListView} from 'react-native-mjrefresh-lower'
+import {ScrollView,ListView} from 'react-native-mjrefresh'
+import LottieRefreshControl from "./LottieRefreshControl";
 
-export default class ListViewExample extends Component {
+export default class LottieListViewExample extends Component {
     constructor(props){
         super(props);
         var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -25,7 +26,7 @@ export default class ListViewExample extends Component {
                     renderRow={(rowData) => <Text onPress={()=>alert(111)} style={{height:100}}>{rowData}</Text>}
                     renderScrollComponent={props=><ScrollView
                         refreshControl={
-                            <HuaWeiRefreshControl
+                            <LottieRefreshControl
                                 ref={ref=>this._hw = ref}
                                 onRefresh={this._onRefresh}
                             />
