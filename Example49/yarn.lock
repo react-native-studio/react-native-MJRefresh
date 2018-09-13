@@ -3845,9 +3845,9 @@ react-native-indicators@^0.13.0:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-mjrefresh-lower@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/react-native-mjrefresh-lower/-/react-native-mjrefresh-lower-0.3.2.tgz#a9f070bdf0d7a498cb0221be0cb05d191defc587"
+react-native-mjrefresh-lower@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/react-native-mjrefresh-lower/-/react-native-mjrefresh-lower-0.4.0.tgz#ad89a60e462c38a524c97f28c7f9af9cc2c24866"
   dependencies:
     prop-types "*"
 
