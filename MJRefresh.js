@@ -7,13 +7,12 @@ import {
     ViewPropTypes as RNViewPropTypes,
     findNodeHandle,
     UIManager,
-    ScrollView as NativeScrollView,
     Platform,
-    ListView as NativeListView,
 } from 'react-native';
 import PropTypes from 'prop-types'
 import MJScrollView from './MJScrollView'
 import MJListView from './MJListView'
+import MJFlatlist from './MJFlatList'
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
 const UnimplementedView = require('react-native/Libraries/Components/UnimplementedViews/UnimplementedView')
 //Android平台未实现RCTMJRefreshView
@@ -60,7 +59,7 @@ class MJRefresh extends Component {
             onMJPulling={this._onMJPulling}
             style={[
                 {
-                    backgroundColor: 'transparent'
+                    backgroundColor:'transparent'
                 },
                 style,
                 {
@@ -79,6 +78,7 @@ MJRefresh.propTypes={
     onPulling:PropTypes.func,
     ...ViewPropTypes
 }
-export const ScrollView = Platform.OS === 'ios' ? MJScrollView : NativeScrollView;
-export const ListView = Platform.OS === 'ios' ? MJListView : NativeListView;
+export const ScrollView = MJScrollView;
+export const ListView = MJListView;
+export const FlatList = MJFlatlist;
 export default MJRefresh;
