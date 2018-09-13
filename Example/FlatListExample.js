@@ -20,6 +20,7 @@ export default class FlatListExample extends Component {
         return (
             <View style={{flex: 1}}>
                 <FlatList
+                    //legacyImplementation 如果需要使用此属性，应从mjrefresh插件中引入Flatlist
                     keyExtractor={(item)=>item}
                     data={this.state.data}
                     renderItem={({item,index}) => <Text key={index} onPress={()=>alert(111)} style={{height:100}}>{item}</Text>}
