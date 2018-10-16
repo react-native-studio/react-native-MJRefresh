@@ -1,16 +1,56 @@
-# react-native-MJRefresh[![npm version](https://badge.fury.io/js/react-native-mjrefresh.svg)](https://badge.fury.io/js/react-native-mjrefresh)
-如果你喜欢，请不要吝啬你的:smile: star :smile:
-android自动刷新组件见[react-native-SmartRefreshLayout](https://github.com/react-native-studio/react-native-SmartRefreshLayout)
-## 第一步
-工程目录下运行<br> `npm install --save react-native-mjrefresh`(rn>=0.55.0)<br>
-`npm install --save react-native-mjrefresh-lower`(rn<=0.54)
-或者<br> `yarn add react-native-mjrefresh`(rn>=0.55)<br/>
-`yarn add react-native-mjrefresh-lower`(rn<=0.54)
-(已经安装了yarn)
-## 第二步
-运行 `react-native link react-native-mjrefresh`（rn>=0.55）<br/>
-`react-native link react-native-mjrefresh-lower`（rn<=0.54）
-## 第三部使用
+# React Native MJRefresh[![npm version](https://badge.fury.io/js/react-native-mjrefresh.svg)](https://badge.fury.io/js/react-native-mjrefresh)
+
+>React-Native-MJRefresh可完成使用React Native对IOS进行自定义下拉刷新设置
+>
+>onPulling参数为{nativeEvent:percent},结合lottie-react-native可以获得绝佳的下拉刷新效果
+>
+>自定义详情可见Example:[HuaWeiRefreshControl.js](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example/HuaWeiRefreshControl.js)
+>
+>ListView使用见：[ListViewExample](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example49/ListViewExample.js)
+>
+>FlatList使用见：[FlatListExample](https://github.com/react-native-studio/react-native-MJRefresh/blob/master/Example49/FlatListExample.js)
+>
+>Android自定义下拉刷新组件见[React-Native-SmartRefreshLayout](https://github.com/react-native-studio/react-native-SmartRefreshLayout)
+>
+
+## 安装
+### 第一步
+工程目录下运行：<br>
+ ```bash
+ npm install --save react-native-mjrefresh (rn>=0.55.0)
+
+ npm install --save react-native-mjrefresh-lower (rn<=0.54)
+```
+or(已经安装了yarn)<br>
+```bash
+ yarn add react-native-mjrefresh (rn>=0.55)
+
+ yarn add react-native-mjrefresh-lower (rn<=0.54)
+```
+
+### 第二步
+
+#### 使用link添加：
+工程目录下运行:
+ ```bash
+ react-native link react-native-mjrefresh （rn>=0.55)
+
+ react-native link react-native-mjrefresh-lower（rn<=0.54）
+ ```
+
+#### 使用CocoaPods添加:
+podfile添加：
+```bash
+  pod 'RCTMJRefreshHeader', :path => '../node_modules/react-native-mjrefresh'
+```
+
+执行：
+```bash
+  pod install
+```
+
+### 第三部使用
+
 在工程中导入：
 ```js
 import MJRefresh,{ScrollView} from 'react-native-mjrefresh'//rn>=0.55
