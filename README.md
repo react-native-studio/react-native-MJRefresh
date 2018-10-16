@@ -14,7 +14,7 @@
 >
 
 ## 安装
-#### 第一步
+### 第一步
 工程目录下运行：<br>
  ```bash
  npm install --save react-native-mjrefresh (rn>=0.55.0)
@@ -28,14 +28,28 @@ or(已经安装了yarn)<br>
  yarn add react-native-mjrefresh-lower (rn<=0.54)
 ```
 
-#### 第二步
+### 第二步
+
+#### 使用link添加：
 工程目录下运行:
  ```bash
  react-native link react-native-mjrefresh （rn>=0.55)
 
  react-native link react-native-mjrefresh-lower（rn<=0.54）
  ```
-#### 第三部使用
+
+#### 使用CocoaPods添加:
+podfile添加：
+```bash
+  pod 'RCTMJRefreshHeader', :path => '../node_modules/react-native-mjrefresh'
+```
+
+执行：
+```bash
+  pod install
+```
+
+### 第三部使用
 
 在工程中导入：
 ```javascript
