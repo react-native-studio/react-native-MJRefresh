@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source              = { :git => 'https://github.com/react-native-studio/react-native-MJRefresh.git', :tag => "v#{package['version']}" }
   s.requires_arc        = true
   s.platform            = :ios, '8.0'
-  s.source_files        = 'ios/*.{h,m}'
+  s.source_files        = 'ios/**/*.{h,m}'
   s.dependency          'React'
 end
