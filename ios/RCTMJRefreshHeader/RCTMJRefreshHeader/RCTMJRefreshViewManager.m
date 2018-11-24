@@ -8,7 +8,7 @@
 #import "MJRefresh.h"
 #import <React/RCTViewManager.h>
 #import <Foundation/Foundation.h>
-#import "RCTMJRefreshHeader.m"
+#import "RCTMJRefreshHeader.h"
 #import <React/RCTBridge.h>
 #import <React/RCTUIManager.h>
 #import <React/UIView+React.h>
