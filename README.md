@@ -28,6 +28,14 @@ or(已经安装了yarn)<br>
  yarn add react-native-mjrefresh-lower (rn<=0.54)
 ```
 
+>> Notice
+
+| react-native | react-native-mjrefresh |
+|------------------|--------------|
+|<0.55             |使用react-native-mjrefresh-lower|
+| >=0.55           | *     |
+| >=0.80            | 0.7.0    |
+
 ### 第二步
 
 #### 使用link添加：
