@@ -1,18 +1,7 @@
 import React, {Component} from 'react';
 import {VirtualizedList, FlatList,Platform} from 'react-native';
-import MJMetroListView from './MJMetroListView'
-
 class MJFlatList extends FlatList {
     render() {
-        if (this.props.legacyImplementation) {
-            return (
-                <MJMetroListView
-                    {...this.props}
-                    items={this.props.data}
-                    ref={this._captureRef}
-                />
-            );
-        } else {
             return (
                 <VirtualizedList
                     {...this.props}
@@ -26,7 +15,6 @@ class MJFlatList extends FlatList {
                     }
                 />
             );
-        }
     }
 }
 
