@@ -30,7 +30,16 @@
 - (void)setPullingPercent:(CGFloat)pullingPercent
 {
     [super setPullingPercent:pullingPercent];
-    if(self.reactTag)self.onMJPulling(@{@"target":self.reactTag,@"percent":[NSNumber numberWithFloat:pullingPercent]});
+    
+    NSDate *time = self.lastUpdatedTime;
+    if (time == nil) {
+        time = [NSDate date];
+    }
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    if(self.reactTag)self.onMJPulling(@{@"target":self.reactTag,@"percent":[NSNumber numberWithFloat:pullingPercent],
+                                        @"lastUpdatedTime":[formatter stringFromDate:time]
+                                        });
 }
 
 @end
